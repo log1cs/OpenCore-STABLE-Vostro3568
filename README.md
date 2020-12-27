@@ -14,7 +14,7 @@ About the specs:
 | **Ethernet** | Realtek RTL8111 |
 | **Wi-Fi Card** | Intel Dual Band AC-3165 |
 | **GPU** | Intel(R) HD Graphics 620 |
-
+| **SMBIOS** | MacBookPro14,2 |
 
  + Since I hasn't fix the graphics yet. You need to use OpenCore with my Clover framebuffer patch or the patch I'm following on Dortania OpenCore Guide.
 
