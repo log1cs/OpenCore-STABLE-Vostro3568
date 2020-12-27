@@ -106,3 +106,7 @@ Cause I've added this kext in EFI folder so you don't need to add it anymore.
 - Thanks to [stevezhengshiqi](https://github.com/stevezhengshiqi) for providing CPUFriend script.
 
 - Thanks to ComboJack cause this providing headphones script to fix "reeeee" sounds when you connect the headphones in ALC256.
+
+
+
+https://user-images.githubusercontent.com/60842977/103176635-fd375e00-48a5-11eb-975c-7d594cb9147a.png
