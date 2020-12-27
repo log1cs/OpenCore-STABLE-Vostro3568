@@ -1,0 +1,1 @@
+# OpenCore-0.6.4-STABLE-Vostro3568
