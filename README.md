@@ -23,7 +23,7 @@ About the specs:
 | **Intel iGPU** | ✅ Working | Intel HD 620 is detected as Intel HD Graphics KBL CRB but nevermind, it's not an error |
 | **Trackpad I2C** |  ✅ Working | Full gesture support.| 
 | **iMessages and App Store** | ✅ Working | Just follow the OpenCore Guide (#ℹ️-changing-serial-number,-board-serial-number-and-smuuid) |
-| **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this link below |
+| **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this [link](https://github.com/hackintosh-stuff/ComboJack) below |
 | **Built-in Microphone** | ✅ Working |
 | **Webcam** | ✅ Working | Fully working, is detected as Integrated Webcam |
 | **Wi-Fi/BT** | ✅ Working | The stock AC3165 Wi-Fi card is working perfectly fine with newest kext Airportitlwm from zxystd. But I recommend using another card like DW1560 or DW1820A for better experiences. |
