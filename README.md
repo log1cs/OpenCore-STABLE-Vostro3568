@@ -1,4 +1,5 @@
-Don't clone the repository. Just click [here](https://github.com/log1cs/OpenCore-0.6.4-STABLE-Vostro3568/releases) and you can find the download sections.
+Don't clone the repository. Just click [here](https://github.com/log1cs/OpenCore-0.6.4-STABLE-Vostro3568/releases) and after that you can find the download sections.
+
 OpenCore 0.6.4 for Vostro 3568 (Stable version)
 
 Just copy the EFI folder and paste it in your EFI partition.
