@@ -1,8 +1,5 @@
-OpenCore 0.6.4 for Vostro 3568.
-
-This is a OpenCore-based EFI for Dell Vostro 3568. REMEMBER: THIS IS THE ALPHA VERSION. YOU MIGHT FACE BUG WHILE USING.
-
-I'm using a Vostro 3568 i3-7020u version.
+OpenCore 0.6.4 for Vostro 3568 (Stable version)
+Just copy the EFI folder and paste it in your EFI partition.
 
 About the specs:
  
@@ -15,9 +12,6 @@ About the specs:
 | **Wi-Fi Card** | Intel Dual Band AC-3165 |
 | **GPU** | Intel(R) HD Graphics 620 |
 | **SMBIOS** | MacBookPro14,2 |
-
- + Since I hasn't fix the graphics yet. You need to use OpenCore with my Clover framebuffer patch or the patch I'm following on Dortania OpenCore Guide.
-
 
 
 
