@@ -1,5 +1,8 @@
 Don't clone the repository. Just click [here](https://github.com/log1cs/OpenCore-0.6.4-STABLE-Vostro3568/releases) and after that you can find the download sections.
 
+
+![Alt text](https://user-images.githubusercontent.com/60842977/103176635-fd375e00-48a5-11eb-975c-7d594cb9147a.png)
+
 OpenCore 0.6.4 for Vostro 3568 (Stable version)
 
 Just copy the EFI folder and paste it in your EFI partition.
@@ -104,5 +107,3 @@ Cause I've added this kext in EFI folder so you don't need to add it anymore.
 
 - Thanks to ComboJack cause this providing headphones script to fix "reeeee" sounds when you connect the headphones in ALC256.
 
-
-![Alt text](https://user-images.githubusercontent.com/60842977/103176635-fd375e00-48a5-11eb-975c-7d594cb9147a.png)
