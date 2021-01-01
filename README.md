@@ -17,7 +17,7 @@ About the specs:
 | **Ethernet** | Realtek RTL8111 |
 | **Wi-Fi Card** | Intel Dual Band AC-3165 |
 | **GPU** | Intel(R) HD Graphics 620 |
-| **SMBIOS** | MacBookPro14,2 |
+| **SMBIOS** | MacBookPro14,1 |
 
 
 
