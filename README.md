@@ -28,7 +28,7 @@ About the specs:
 | **Webcam** | ✅ Working | Fully working, is detected as Integrated Webcam |
 | **Wi-Fi/BT** | ✅ Working | The stock AC3165 Wi-Fi card is working perfectly fine with newest kext Airportitlwm from zxystd. But I recommend using another card like DW1560 or DW1820A for better experiences. |
 | **Fingerprint reader** | ❌ Not working | Probably will never work, because proprietary Synaptics drivers that only exist for Windows are needed. Will patch to disable it. |
-| **SD Reader** | ❌ Not working | The USB2.0 SDCard Reader from Realtek never working on Mac because drivers is only for Windows. Will patch to disable it. |
+| **SD Reader** | ❌ Not working | The USB2.0 SDCard Reader from Realtek will never work on Mac because drivers is only for Windows. Will patch to disable it. |
 | **Ethernet** | ✅ Working perfectly |
 
 
