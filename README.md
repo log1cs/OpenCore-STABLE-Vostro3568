@@ -1,4 +1,5 @@
 OpenCore 0.6.4 for Vostro 3568 (Stable version)
+
 Just copy the EFI folder and paste it in your EFI partition.
 
 About the specs:
