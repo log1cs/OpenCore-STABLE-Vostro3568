@@ -1,3 +1,5 @@
+READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI.
+
 Don't clone the repository. Just click [here](https://github.com/log1cs/OpenCore-0.6.4-STABLE-Vostro3568/releases) and after that you can find the download sections.
 I'll upload the issue in [here](https://github.com/log1cs/OpenCore-STABLE-Vostro3568/issues)
 
