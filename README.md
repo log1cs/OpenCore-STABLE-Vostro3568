@@ -105,7 +105,7 @@ Cause I've added this kext in EFI folder so you don't need to add it anymore.
 
 ## Credits:
 
-- Thanks to [Acidanthera](https://github.com/acidanthera) and [PMHeart](https://github.com/PMHeart) for providing [CPUFriend](https://github.com/acidanthera/CPUFriend).
+- Thanks to [Acidanthera](https://github.com/acidanthera) and [PMHeart](https://github.com/PMHeart) for providing kext and [CPUFriend](https://github.com/acidanthera/CPUFriend).
 
 - Thanks to [stevezhengshiqi](https://github.com/stevezhengshiqi) for providing CPUFriend script.
 
