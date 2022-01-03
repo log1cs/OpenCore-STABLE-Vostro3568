@@ -3,7 +3,7 @@ READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI.
 Don't clone the repository. Just click [here](https://github.com/log1cs/OpenCore-0.6.4-STABLE-Vostro3568/releases) and after that you can find the download sections.
 I'll upload the issue in [here](https://github.com/log1cs/OpenCore-STABLE-Vostro3568/issues)
 
-![Alt text](https://user-images.githubusercontent.com/60842977/147896099-d8449ccf-ed32-42b1-bbf1-b00fc25627ca.png)
+![Alt text](https://user-images.githubusercontent.com/60842977/147896214-159dd21c-1989-405a-886f-c2e30f936511.png)
 
 OpenCore for Monterey on Vostro 3568 (Stable version)
 
