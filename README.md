@@ -5,7 +5,7 @@ I'll upload the issue in [here](https://github.com/log1cs/OpenCore-STABLE-Vostro
 
 ![Alt text](https://user-images.githubusercontent.com/60842977/111065535-e5f32e80-84ec-11eb-9907-8badb3a2e393.png)
 
-OpenCore 0.6.4 for Vostro 3568 (Stable version)
+OpenCore for Big Sur on Vostro 3568 (Stable version)
 
 Just copy the EFI folder and paste it in your EFI partition.
 
