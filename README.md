@@ -38,6 +38,8 @@ About the specs:
 
 
 FOR BATTERY OPTIMIZATION USE THIS GUIDE: ~~(I've added this kext but you can edit with yours, whatever)~~. I REMOVED THIS KEXT SINCE IT CAUSES PERFORMANCE ISSUES ON MONTEREY, HUGE PERFORMANCE DROP. YOU CAN ADD THIS KEXT MANUALLY, THAT DEPENDS ON YOU.
+
+Link to the kext/script:
 https://github.com/stevezhengshiqi/one-key-cpufriend 
 
 + Guide :
