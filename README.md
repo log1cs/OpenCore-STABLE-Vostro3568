@@ -1,11 +1,8 @@
+## OpenCore 0.7.9 for Vostro 3568 (Stable version)
+
 READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI.
 
-Don't clone the repository. Just click [here](https://github.com/log1cs/OpenCore-0.6.4-STABLE-Vostro3568/releases) and after that you can find the download sections.
-I'll upload the issue in [here](https://github.com/log1cs/OpenCore-STABLE-Vostro3568/issues)
-
 ![Alt text](https://user-images.githubusercontent.com/60842977/147896214-159dd21c-1989-405a-886f-c2e30f936511.png)
-
-OpenCore for Monterey on Vostro 3568 (Stable version)
 
 Just copy the EFI folder and paste it in your EFI partition.
 
@@ -13,7 +10,7 @@ About the specs:
  
 | Specs | Info |
 |----------|----------|
-| **RAM** | 4GB DDR4 2133 x1 + 1x 4GB DDR4 2400 x1 |
+| **RAM** | 2x DDR4 2400MHz 4GB |
 | **CPU** | Intel Core i3-7020u (2 cores 4 threads) 2.3 GHz |
 | **Audio** | Realtek ALC256 Audio Controller |
 | **Ethernet** | Realtek RTL8111 |
@@ -25,77 +22,36 @@ About the specs:
 
 | Feature | Status | Notes |
 | ------------- | ------------- | ------------- |
-| **Intel iGPU** | ✅ Working | Intel HD 620 is detected as Intel HD Graphics KBL CRB but nevermind, it's not an error |
+| **Intel iGPU** | ✅ Working | Worked fine |
 | **Trackpad I2C** |  ✅ Working | Full gesture support.| 
 | **iMessages and App Store** | ✅ Working | Just follow the OpenCore Guide (#ℹ️-changing-serial-number,-board-serial-number-and-smuuid) |
 | **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this [link](https://github.com/hackintosh-stuff/ComboJack) below |
 | **Built-in Microphone** | ✅ Working |
 | **Webcam** | ✅ Working | Fully working, is detected as Integrated Webcam |
 | **Wi-Fi/BT** | ✅ Working | The stock AC3165 Wi-Fi card is working perfectly fine with newest kext Airportitlwm from zxystd. But I recommend using another card like DW1560 or DW1820A for better experiences. |
-| **Fingerprint reader** | ❌ Not working | Probably will never work, because proprietary Synaptics drivers that only exist for Windows are needed. Will patch to disable it. |
-| **SD Reader** | ❌ Not working | The USB2.0 SDCard Reader from Realtek will never work on Mac because drivers is only for Windows. Will patch to disable it. |
+| **Fingerprint reader** | ❌ Not working | Probably will never work, because proprietary Synaptics drivers that only exist for Windows are needed. Disabled to save power. |
+| **SDCard slot** | ❌ Not working | The USB2.0 SDCard Reader from Realtek will never work on Mac because drivers is only for Windows. Disabled to save power. |
 | **Ethernet** | ✅ Working perfectly |
 
 
-FOR BATTERY OPTIMIZATION USE THIS GUIDE: ~~(I've added this kext but you can edit with yours, whatever)~~. I REMOVED THIS KEXT SINCE IT CAUSES PERFORMANCE ISSUES ON MONTEREY, HUGE PERFORMANCE DROP. YOU CAN ADD THIS KEXT MANUALLY, THAT DEPENDS ON YOU.
+## FAQ
+### Booting the installer
+After having created the installer USB flash drive, you are ready to install macOS on your Vostro. Make sure SSD mode is set to AHCI mode instead of RAID in BIOS otherwise, macOS won't be able to detect your SSD. Select your USB flash drive as boot media and go through the macOS installer like you would on a real mac. Once you have come to the desktop, advance to the next step.
 
-Link to the kext/script:
-https://github.com/stevezhengshiqi/one-key-cpufriend 
+### Post Installation
+Congratulations! You have successfully booted and installed macOS. At this point, you just have to copy the EFI folder you have prepared in a previous step to the SSD. Mount the EFI partition of your SSD with
 
-+ Guide :
+`sudo diskutil mount disk0s1`
 
-1. Run this command in Terminal:
+and copy your customized EFI folder into the newly mounted EFI partition. You should now be able to boot your computer without the USB flash drive attached. If you're having issues with specific parts like Wi-Fi, Bluetooth, or Audio, have a look at the corresponding sections in this repository and open an issue if you are unable to solve them.
 
-```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/stevezhengshiqi/one-key-cpufriend/master/one-key-cpufriend.sh)"
-```
+## 🛠 Hardware
+This section talks about configuring the EFI folder for your exact hardware.
 
-**Cause we're using OpenCore, install using this guide:**
+Almost all changes are done inside the OpenCore configuration file. I strongly recommend using either [ProperTree](https://github.com/corpnewt/ProperTree) or Xcode to edit `EFI/OC/config.plist`.
 
-  - Copy `CPUFriend.kext` and `CPUFriendDataProvider.kext` from desktop to `/OC/Kexts/`.
-  - Open `/OC/config.plist` and add the following code:
-```xml
-<dict>
-    <key>Arch</key>
-    <string>x86_64</string>
-    <key>BundlePath</key>
-    <string>CPUFriend.kext</string>
-    <key>Comment</key>
-    <string>Power management data injector</string>
-    <key>Enabled</key>
-    <true/>
-    <key>ExecutablePath</key>
-    <string>Contents/MacOS/CPUFriend</string>
-    <key>MaxKernel</key>
-    <string></string>
-    <key>MinKernel</key>
-    <string>12.0.0</string>
-    <key>PlistPath</key>
-    <string>Contents/Info.plist</string>
-</dict>
-<dict>
-    <key>Arch</key>
-    <string>x86_64</string>
-    <key>BundlePath</key>
-    <string>CPUFriendDataProvider.kext</string>
-    <key>Comment</key>
-    <string>Power management data</string>
-    <key>Enabled</key>
-    <true/>
-    <key>ExecutablePath</key>
-    <string></string>
-    <key>MaxKernel</key>
-    <string></string>
-    <key>MinKernel</key>
-    <string>12.0.0</string>
-    <key>PlistPath</key>
-    <string>Contents/Info.plist</string>
-</dict>
-```
-
-
-FOR AUDIO FIXING USE THIS GITHUB REPO AND FOLLOW THE INSTRUCTIONS: 
-https://github.com/hackintosh-stuff/ComboJack
+### 🔈 Audio
+Without any modifications, the headphone jack is buggy. External microphones aren't detected and the audio output may randomly stop working or start making weird noises. Sometimes un- and replugging the headphones works, but that's pretty annoying and unreliable. To permanently fix this issue you will have to install [this fork of ComboJack](https://github.com/lvs1974/ComboJack).
 
 Cause I've added this kext in EFI folder so you don't need to add it anymore.
 
@@ -103,10 +59,29 @@ Cause I've added this kext in EFI folder so you don't need to add it anymore.
 1. Run ComboJack_Installer/install.sh in terminal and reboot
 2. Done. When you attach a headphone there will be a popup asking about headphone type.
 
+### 🔋 Power management
+Hibernation is not supported on a Hackintosh and everything related to it should be completely disabled. Disabling additional features prevents random wakeups while the lid is closed. After every update, these settings should be reapplied manually.
+
+```
+sudo pmset -a hibernatemode 0
+sudo rm -f /var/vm/sleepimage
+sudo mkdir /var/vm/sleepimage
+sudo pmset -a standby 0
+sudo pmset -a autopoweroff 0
+sudo pmset -a powernap 0
+sudo pmset -a proximitywake 0
+sudo pmset -b tcpkeepalive 0 (optional)
+```
+
+For the best power management it's recommended to disable CFG lock and let macOS do the power management. Follow [this guide](https://github.com/jaromeyer/XPS9570-Catalina/issues/44#issuecomment-708540167) to do so. For more information about CFG lock, have a look [here](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html).
+
+### I have a Samsung PM981 SSD, will it work?
+The Samsung PM981 (or more precise the controller it uses) is known to cause random kernel panics in macOS. Up until now, there was no way to even install macOS on the PM981 and the only option was to replace it with either a SATA or a known working NVMe SSD. However, recently a new set of patches, namely [NVMeFix](https://github.com/acidanthera/NVMeFix) was released. It greatly improves compatibility with non-apple SSDs including the PM981. Thanks to those patches, you can now install macOS, but there is still a chance for kernel panics to occur while booting.
+
+
 ## Credits:
 
 - Thanks to [Acidanthera](https://github.com/acidanthera) and [PMHeart](https://github.com/PMHeart) for providing kext and [CPUFriend](https://github.com/acidanthera/CPUFriend).
 
-- Thanks to [stevezhengshiqi](https://github.com/stevezhengshiqi) for providing CPUFriend script.
 
 - Thanks to ComboJack cause this providing headphones script to fix "reeeee" sounds when you connect the headphones in ALC256.
