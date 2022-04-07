@@ -1,4 +1,4 @@
-## OpenCore 0.7.9 for Vostro 3568 (Stable version)
+## OpenCore 0.7.9 for Vostro 3568
 
 READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI.
 
