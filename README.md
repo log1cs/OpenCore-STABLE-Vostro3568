@@ -1,8 +1,8 @@
-## OpenCore 0.7.9 for Vostro 3568
+## OpenCore 0.8.1 for Vostro 3568
 
-READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI.
+READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI. You can clone the repository right now instead of heading to the Release page.
 
-![Alt text](https://user-images.githubusercontent.com/60842977/147896214-159dd21c-1989-405a-886f-c2e30f936511.png)
+![Alt text]([https://user-images.githubusercontent.com/60842977/147896214-159dd21c-1989-405a-886f-c2e30f936511.png](https://user-images.githubusercontent.com/60842977/172500778-b9078c2d-5a4e-459b-bf6a-7ec59e159bfa.png))
 
 Just copy the EFI folder and paste it in your EFI partition.
 
