@@ -27,8 +27,8 @@ About the specs:
 | **iMessages and App Store** | ✅ Working | Just follow the OpenCore Guide (#ℹ️-changing-serial-number,-board-serial-number-and-smuuid) |
 | **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this [link](https://github.com/hackintosh-stuff/ComboJack) below |
 | **Built-in Microphone** | ✅ Working |
-| **Webcam** | ✅ Working | Fully working, is detected as Integrated Webcam |
-| **Wi-Fi/BT** | ✅ Working | The stock AC3165 Wi-Fi card is working perfectly fine with newest kext Airportitlwm from zxystd. But I recommend using another card like DW1560 or DW1820A for better experiences. |
+| **Webcam** | ❌ Not working | Works on Monterey, but not on Ventura |
+| **Wi-Fi/BT** | ✅ Working | Using itlwm since Airportitlwm doesn't support Ventura. Remember to download HeliPort before using this EFI. |
 | **Fingerprint reader** | ❌ Not working | Probably will never work, because proprietary Synaptics drivers that only exist for Windows are needed. Disabled to save power. |
 | **SDCard slot** | ❌ Not working | The USB2.0 SDCard Reader from Realtek will never work on Mac because drivers is only for Windows. Disabled to save power. |
 | **Ethernet** | ✅ Working perfectly |
