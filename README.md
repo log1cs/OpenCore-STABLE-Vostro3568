@@ -1,5 +1,6 @@
 ## OpenCore 0.8.1 for Vostro 3568
 
+## Remember to set CFG-Lock value to 0x00 before using this EFI. And generate MLB, Serial, UUID yourself
 READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI. You can clone the repository right now instead of heading to the Release page.
 
 ![Alt text](https://user-images.githubusercontent.com/60842977/172500778-b9078c2d-5a4e-459b-bf6a-7ec59e159bfa.png)
@@ -74,6 +75,9 @@ sudo pmset -b tcpkeepalive 0 (optional)
 ```
 
 For the best power management it's recommended to disable CFG lock and let macOS do the power management. Follow [this guide](https://github.com/jaromeyer/XPS9570-Catalina/issues/44#issuecomment-708540167) to do so. For more information about CFG lock, have a look [here](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html).
+
+### Why there is RestrictEvent kext in EFI, what does it means?
+RestrictEvent is a kext that help bypass MacOS limitations, in our case it prevents the device from random freezing.
 
 ### I have a Samsung PM981 SSD, will it work?
 The Samsung PM981 (or more precise the controller it uses) is known to cause random kernel panics in macOS. Up until now, there was no way to even install macOS on the PM981 and the only option was to replace it with either a SATA3 SSD. 
