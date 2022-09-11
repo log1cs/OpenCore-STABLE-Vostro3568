@@ -28,7 +28,7 @@ About the specs:
 | **iMessages and App Store** | ✅ Working | Just follow the OpenCore Guide (#ℹ️-changing-serial-number,-board-serial-number-and-smuuid) |
 | **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this [link](https://github.com/hackintosh-stuff/ComboJack) below |
 | **Built-in Microphone** | ✅ Working |
-| **Webcam** | ❌ Not working | Works on Monterey, but not on Ventura |
+| **Webcam** | ✅ Working  | Works fine on Latest Ventura Beta 7 |
 | **Wi-Fi/BT** | ✅ Working | Using itlwm since Airportitlwm doesn't support Ventura. Remember to download HeliPort before using this EFI. |
 | **Fingerprint reader** | ❌ Not working | Probably will never work, because proprietary Synaptics drivers that only exist for Windows are needed. Disabled to save power. |
 | **SDCard slot** | ❌ Not working | The USB2.0 SDCard Reader from Realtek will never work on Mac because drivers is only for Windows. Disabled to save power. |
