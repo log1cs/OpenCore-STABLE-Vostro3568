@@ -1,7 +1,7 @@
 ## OpenCore 0.8.4 for Vostro 3568
 
-## Remember to set CFG-Lock value to 0x00 before using this EFI. And generate MLB, Serial, UUID yourself
-READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI. You can clone the repository right now instead of heading to the Release page.
+## Remember to set CFG-Lock value to 0x00 before using this EFI. Also generate MLB, Serial, UUID yourself!
+READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI. You can clone the repository right now instead of heading to the Release page (because that won't be updated anymore XDDDDDDDDDDDDD)
 
 ![Alt text](https://user-images.githubusercontent.com/60842977/172500778-b9078c2d-5a4e-459b-bf6a-7ec59e159bfa.png)
 
@@ -28,7 +28,7 @@ About the specs:
 | **iMessages and App Store** | ✅ Working | Just follow the OpenCore Guide (#ℹ️-changing-serial-number,-board-serial-number-and-smuuid) |
 | **Speakers and Headphones** | ✅ Working | To permanently fix headphones follow this [link](https://github.com/hackintosh-stuff/ComboJack) below |
 | **Built-in Microphone** | ✅ Working |
-| **Webcam** | ✅ Working  | Works fine on Latest Ventura Beta 7 |
+| **Webcam** | ✅ Working  | Works fine on latest Ventura Beta 7 |
 | **Wi-Fi/BT** | ✅ Working | Using itlwm since Airportitlwm doesn't support Ventura. Remember to download HeliPort before using this EFI. |
 | **Fingerprint reader** | ❌ Not working | Probably will never work, because proprietary Synaptics drivers that only exist for Windows are needed. Disabled to save power. |
 | **SDCard slot** | ❌ Not working | The USB2.0 SDCard Reader from Realtek will never work on Mac because drivers is only for Windows. Disabled to save power. |
