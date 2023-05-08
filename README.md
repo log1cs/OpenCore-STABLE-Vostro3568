@@ -1,5 +1,6 @@
 ## OpenCore 0.8.4 for Vostro 3568
 
+## Friendly warning: This repository is EOL now!
 ## Remember to set CFG-Lock value to 0x00 before using this EFI. Also generate MLB, Serial, UUID yourself!
 READ THIS README.MD FIRST BEFORE DOWNLOAD THE EFI. You can clone the repository right now instead of heading to the Release page (because that won't be updated anymore XDDDDDDDDDDDDD)
 
